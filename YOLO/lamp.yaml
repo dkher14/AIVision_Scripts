@@ -1,0 +1,99 @@
+# lamp dataset
+# Example usage: yolo train data=lamp.yaml
+# parent
+# ├── ultralytics
+# └── datasets
+#     └── lamp
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: datasets/lamp # dataset root dir
+train: images/train # train images (relative to 'path') 4 images
+val: images/val # val images (relative to 'path') 4 images
+test: # test images (optional)
+
+# Number of classes
+nc: 82
+# Classes
+names:
+  0: 1_01 Rear_Seat_Belt_Warning
+  1: 1_02 Brake_Warning_Light
+  2: 1_03 Brake_Warning_Light
+  3: 1_04 Charge_Warning_Light
+  4: 1_05 Electronic_Parking_Brake_Indicator_Light
+  5: 1_06 Electronic_Parking_Brake_Indicator_Light
+  6: 1_07 Engine_Oil_Pressure_Warning_Light
+  7: 1_08 Master_Warning_Light
+  8: 1_09 Seat_Belt_Warning_Light
+  9: 1_10 Security_Indicator_Light
+  10: 1_11 Supplemental_Air_Bag_Warning_Light
+  11: 1_12 Electric_Shift_Control_System_Warning_Light
+  12: 1_13 Hands_OFF_Warning_Light
+  13: 1_14 Automatic_Transmission_Oil_Temperature
+  14: 1_15 Automatic_Transmission_Park_Warning_Light
+  15: 1_16 Door/Trunk_Open
+  16: 1_17 High_Temperature_Warning_Light
+  17: 1_18 P_Position_Selecting_Warning_Light
+  18: 1_19 Power_Steering_Warning_Light
+  19: 2_01 Anti-Lock_Braking_System_Warning_Light
+  20: 2_02 Anti-Lock_Braking_System_Warning_Light
+  21: 2_03 Automatic_Emergency_Braking_Warning_Light
+  22: 2_04 Automatic_Emergency_Braking_OFF
+  23: 2_05 Electronic_Parking_Brake_Warning_Light
+  24: 2_06 Electronic_Parking_Brake_Warning_Light
+  25: 2_07 Front_Passenger_Air_Bag_Status_Light
+  26: 2_08 Front_Passenger_Air_Bag_Status_Light
+  27: 2_09 Low_Tire_Pressure_Warning_Light
+  28: 2_10 Malfunction_Indicator_Light
+  29: 2_11 Master_Warning_Light
+  30: 2_12 Power_Steering_Warning_Light
+  31: 2_13 Rear_Automatic_Braking_OFF_Warning_Light
+  32: 2_14 Rear_Automatic_Braking_System_OFF_Warning_Light
+  33: 2_15 Slip_Indicator_Light
+  34: 2_16 Vehicle_Dynamic_Control_OFF_Indicator_Light
+  35: 2_17 Automatic_Transmission_Check_Warning_Light
+  36: 2_18 Check_Suspension_Indicator_Light
+  37: 2_19 Four-Wheel_Drive_Warning_Light
+  38: 2_20 Electronic_Locking_Rear_Differential_System_On
+  39: 2_21 Hill_Descent_Control_System_On_Indicator_Light
+  40: 2_22 Low_Fuel_Indicator
+  41: 2_23 Low_Washer_Fluid_Indicator
+  42: 2_24 Low_Outside_Temperature_Indicator
+  43: 2_25 Key_Battery_Low_Indicator
+  44: 2_26 Blind_Spot_Warning_Indicator
+  45: 2_27 Lane_Departure_Warning_Indicator
+  46: 2_28 Loose_Fuel_Cap_Warning
+  47: 2_29 Continuously_Variable_Transmission_Position
+  48: 2_30 Continuously_Variable_Transmission_Position
+  49: 2_31 All-Wheel_Drive_Indicator_Light
+  50: 2_32 All-Wheel_Drive_AUTO_Indicator_Light
+  51: 2_33 Electric_Power_Steering_Warning_Light
+  52: 2_34 Intelligent_Key_System_Warning_Light
+  53: 2_35 Engine_Start_Operation_Indicator_Light
+  54: 2_36 Overdrive_OFF_Indicator_Light
+  55: 2_37 Transfer_4LO_Position_Indicator_Light
+  56: 2_38 Transmission_Warning_Light
+  57: 2_39 Approaching_Vehicle_Sound_OFF_Warning_Light
+  58: 2_40 Electric_Vehicle_(EV)_System_Warning_Light
+  59: 2_41 Power_Limitation_Indicator_Light
+  60: 2_42 LED_Headlight_System_Warning_Light
+  61: 2_43 All-Wheel_Drive_LOCK_Indicator_Light
+  62: 2_44 4WD_Shift_Indicator_Light
+  63: 2_45 Soft_Top_Indicator_Light
+  64: 2_46 Slip_Indicator_Light
+  65: 3_01 Automatic_Brake_Hold_Indicator_Light
+  66: 3_02 High_Beam_Assist_Indicator_Light
+  67: 3_03 Side_Light_And_Headlight_Indicator_Light
+  68: 3_04 Turn_Signal/_Hazard_Indicator_Lights
+  69: 3_05 Front_Fog_Light_Indicator_Light
+  70: 3_06 ECO_Mode_Indicator_Light
+  71: 3_07 TOW_Mode_Indicator_Light
+  72: 3_08 Cruise_Control_Indicator
+  73: 3_09 Cruise_Indicator_Light
+  74: 3_10 Cruise_Set_Switch_Indicator_Light
+  75: 3_11 All-Wheel_Drive_Indicator_Light
+  76: 3_12 Sport_Mode_Indicator_Light
+  77: 3_13 Plug-In_Indicator_Light
+  78: 3_14 Ready_To_Drive_Indicator_Light
+  79: 3_15 EV_Indicator_Light
+  80: 3_16 Automatic_Brake_Hold_Indicator_Light
+  81: 3_17 High_Beam_Indicator_Light
